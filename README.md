@@ -11,7 +11,8 @@
 
 ## R
 
-### Go through these after python unless you feel comfortable with python
+### Go through these files after python unless you feel comfortable with python
+### Start off with reading the html document (it should open in your browser when double clicked)
 ### This tutorial is not too in depth, just showcasing some things you can do with R
 
 
@@ -21,8 +22,8 @@
 
 ### Feel free to ask me, use AI, google, youtube, and documentation
 
-### There is so much you can do with python and R please dont be discouraged if things are not working right
-### I cant tell you how many times theyve been minor mistakes thats held me back
+### There is so much you can do with python and R please do not be discouraged if things are not working right
+### I cannot tell you how many times there have been minor mistakes that have held me back
 
 ## Hope this tutorial was helpful and you enjoyed these practice problems
 
