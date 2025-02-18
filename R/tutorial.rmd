@@ -1,0 +1,152 @@
+---
+title: "Tutorial"
+output: html_document
+toc: true
+toc_float: true
+
+---
+
+# This is a R markdown document (rmd) that will be converted to a html document
+
+# R Tutorial
+
+## To get started visit https://posit.co/download/rstudio-desktop/ and download RStudio Desktop and R
+
+## Once you download R and R studio, download these packages through the following commands into the R console
+
+### install.packages("rmarkdown")
+### install.packages("tidyverse")
+### install.packages("tinytex")
+### tinytex::install_tinytex()
+
+
+This is a tutorial on how to use R.
+Using # will make a # text a header.
+Using ## will make a ## text a subheader.
+Using ### will make a ### text a subsubheader. 
+
+R is nice because you can write these documents and format it neatly while also running code.
+
+
+Below is an r code chunk that will run the code and display the output.
+Code chunks are where you put your code for it to run
+
+
+
+Since we have already done the python introduction and R uses similar programming concepts, we will not go over the basics of programming in R.
+
+Instead we will focus on things specific to R
+
+
+You can also use and an R sript to run code instead of R markdown.
+
+R chunks are contained in three backticks and then an r in curly braces like so:
+
+```{r}
+# Function to add two numbers
+#we use the arrow <- to assign a value to a variable
+#we use the return() function to return a value
+
+add_numbers <- function(a, b) {
+  return(a + b)
+}
+
+# Example usage
+result <- add_numbers(3, 5)
+print(result)
+```
+
+
+## Plotting
+
+If you didnt like the matplot library plotting in python, R is also great to visualize data
+
+I am not too well experience with plotting in R studio
+
+A lot has to do with what you want to accomplish statistically, wether thats creating models for data, observing relationships, or seeing the range.
+
+
+I will attempt to show you a few basics. Remember if you need help there is documentation, youtube videos, google, and AI
+
+### Reading in some data
+
+Firstly make sure you set your working directory to the current folder your in so you dont get annoyed trying to read in a file
+```{r}
+#Reading in via looking through directories directly
+#Do this if you cant set your working directory right
+
+
+#When you run this. The read csv expects a csv
+#you can take that out if you arent reading a csv
+#The file.choose allows you to look through all your folder to #select a file once you run the script
+my_data = read.csv(file.choose())
+
+#If you have the data in this directory and the directory set,
+#Use this method
+#It gives a warning because my data does not have headers
+my_data = read.csv("test1_input_mat.csv")
+
+
+#Lets see our data
+print(my_data)
+
+
+#Now we can plot it
+#Use the $ operator to access different columns in the table
+# this is plotting 94 column as x and 88 column as y
+plot(my_data$X94, my_data$X88)
+#Pretty unimpressive huh
+#If you open up the file you can see that it made the first row the
+#column names oh well, were not too worried right now
+```
+
+You can manipulate data in the future just like you saw in python.
+Although some syntax may be different but in general loops and 
+control statements should accomplish the same thing
+
+
+This is a sample plotting 
+```{r}
+#This is a vector of data in R
+#Notice how we reused the data
+my_data = c(1, 2, 3, 4, 5)
+
+#Easy plot function
+#If you ever need to know what a function does, in your R console do ?function_name Ex: ?plot
+plot(my_data)
+```
+
+
+ggplot is great
+
+You can make really complex plots and showcase a lot of different thing
+
+```{r}
+# Load the ggplot2 library for plotting
+# You may have to download packages
+library(ggplot2)
+
+# Create a simple data frame
+data <- data.frame(
+  x = 1:10,
+  y = c(2, 3, 5, 7, 11, 13, 17, 19, 23, 29)
+)
+
+# Create a scatter plot
+ggplot(data, aes(x = x, y = y)) +
+  geom_point() +
+  ggtitle("Scatter Plot of x vs y") +
+  xlab("X Axis") +
+  ylab("Y Axis")
+```
+
+
+
+Turtorial is complete as of now. I knows its not much for r, but I 
+dont think you guys will be using stats. If you are I can help and make a more detailed one. We will go over all this in person so if you have questions about it you can ask me. If you havent looked at this before we meet no worries.
+
+
+
+
+
+
