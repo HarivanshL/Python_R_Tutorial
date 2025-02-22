@@ -122,39 +122,41 @@ Functions take in arguments and return some sort of output
 def practicing_data_types():
 
     #Assing a integer to this variable
-    int_number = 
+    int_number = 10
     print("You changed int_number to: ", int_number)
 
     #Assing a float to this variable
-    float_number = 
+    float_number =1.0
     print("You changed float_number to: ", float_number)
 
     #Assing a string to this variable
-    string =
+    string = " Hello"
     print("You changed string to: ", string)
 
     #Assing a boolean to this variable
-    boolean =
+    boolean = True
     print("You changed boolean to: ", boolean)
 
     #Assing a list to this variable use [elemen1, element2, element3]
-    list_ =
+    list_ = [0, 1, 2]
     print("You changed list_ to: ", list_)
 
     #Assing a tuple to this variable use (elemen1, element2, element3)
-    tuple_ =
+    two =2
+    three = 4
+    tuple_ = (two, three)
     print("You changed tuple_ to: ", tuple_)
 
     #Assing a dictionary to this variable use {key1: value1, key2: value2}
-    dict_ =
+    dict_ = {"world": 12, "earth": "water"}
     print("You changed dict_ to: ", dict_)
 
     #Assing a set to this variable use {element1, element2, element3}
-    set_ =
+    set_ = {2,4,5, 2}
     print("You changed set_ to: ", set_)
 
     #Assing None to this variable
-    none_ =
+    none_ = None
     print("You changed none_ to: ", none_)
 
 

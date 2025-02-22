@@ -36,18 +36,32 @@ by multiple orders of magnitude. So be careful when using nested loops
 
 
 # Problem 1: Print the numbers from 1 to 100 using a for loop
-def print_numbers():
-    
+def print_numbers(fifty):
+   for index in range(fifty,101):
+       print (index)
+       #comment index += 1; this will increment one more time as well eg (50,52,54)
+       #for loop already increments by one with for loop
+
 
 # Problem 2: Print the numbers from 1 to 100 using a while loop
-def print_numbers_while():
-
+def print_numbers_while(num):
+    while num <= 100:
+        print(num)
+        num += 1
+        #comment num = num +1
 
 # Problem 3: Print the multiplication table of a number
 def multiplication_table(num):
+    for i in range(1,num):
+        for j in range (1, num):
+            print(i*j)
+    #j represents another index, we cant use i again since its already defined
 
 
 
-print_numbers()
-print_numbers_while()
+
+
+fifty = 50
+print_numbers(fifty)
+print_numbers_while(fifty)
 multiplication_table(12)

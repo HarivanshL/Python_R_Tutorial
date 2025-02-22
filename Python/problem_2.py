@@ -59,15 +59,32 @@ Examples of control statements:
 
 # Problem 1: Check if a number is positive, negative, or zero
 def check_number(num):
+
+     if (num)> 0:
+        print("Postive")
+     elif num <0:
+        print("negative")
+     else: print("zero")
+        
     
 
 # Problem 2: Find the largest of three numbers
 def largest_of_three(a, b, c):
+     if(a > b and a > c):
+        print("largest: ", a)
+     if( b > a and b > c):
+         print("largest: ", b)
+     else: 
+         print("smallest", c)
+
     
 
 # Problem 3: Print all even numbers from 1 to n
 def print_even_numbers(n):
-    for i in range(1, n+1):
+    for index in range(1, n+1):
+        if index % 2 == 0:
+            print(index)
+            
         
 
         
